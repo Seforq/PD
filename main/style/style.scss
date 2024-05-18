@@ -54,7 +54,7 @@ main.content-wrapper {
   .content-first-block {
     height: 100%;
     padding: 0 40px 0;
-    min-height: calc(100vh - var(--sereja-genius));
+    min-height: calc(35vh - var(--sereja-genius));
 
     h1 {
       margin: 0;
@@ -62,6 +62,7 @@ main.content-wrapper {
       font-size: 80px;
     }
   }
+
   .content-second-block {
     img {
       width: 100%;
@@ -69,3 +70,135 @@ main.content-wrapper {
     }
   }
 }
+
+nav {
+  &.primary-navigation {
+    margin: 0 300px;
+    display: block;
+    padding: 0 0 0;
+    font-size: 24px;
+
+    ul li {
+      list-style: none;
+      margin: 0 auto;
+      border-left: 2px solid #008bef;
+      display: inline-block;
+      padding: 0 40px;
+      position: relative;
+      text-decoration: none;
+
+      font-family: "Evolventa", sans-serif;
+    }
+
+    li a {
+      color: #000000;
+    }
+
+    li a:hover {
+      color: #275b80;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      margin-top: 1px;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: #ffffff;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: auto;
+      text-align: left;
+      padding-top: 10px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3CA0E7;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+a {
+
+  text-decoration: none;
+
+
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+.dropdown {
+  color: white;
+ 
+  width: 100%;
+  max-width: 500px;
+}
+
+.dropdown h3 {
+  display: inline-block;
+  outline-style: ridge;
+  outline-width: 5px;
+  outline-color: black;
+  background: #808065;
+  cursor: pointer;
+  padding: 6px;
+  text-align: center;
+  font-size: 27px;
+}
+
+.dropdown:hover {
+  color: #fffc00;
+}
+
+
+.dropdown-content1 {
+  margin-left: -0.23vw;
+  border-radius: 7px;
+  display: none;
+  font-size: 20px;
+  width: auto;
+  background-color: moccasin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  visibility: visible;
+  opacity: 1;
+  color: black;
+  display: block;
+  padding: 12px 5px;
+  text-decoration: none;
+}
+
+.dropdown-content1 a:hover {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  transform: scale(1.05623);
+}
+
