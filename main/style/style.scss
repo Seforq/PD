@@ -5,9 +5,18 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Evolventa-Regular";
+  src: url(../font/Evolventa-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Evolventa-Bold";
+  src: url(../font/Evolventa-Bold.ttf);
+}
 
 body {
-  font-family: "Evolventa", sans-serif;
+  font-family: "Evolventa-Regular", sans-serif;
   overflow: auto;
   line-height: 1;
   margin: 0;
@@ -26,11 +35,12 @@ body {
 header {
   .logo-wrapper {
     display: flex;
+    font-weight: 600;
     width: 100%;
     height: 100%;
     min-height: var(--sereja-genius);
     padding: 10px 0 10px 60px;
-    background: cadetblue;
+    background: #bbdada;
     align-items: center;
   }
 
@@ -53,6 +63,7 @@ main.content-wrapper {
 
   .content-first-block {
     height: 100%;
+    font-weight: 700;
     padding: 0 40px 0;
     min-height: calc(100vh - var(--sereja-genius));
 
@@ -86,7 +97,6 @@ nav {
       position: relative;
       text-decoration: none;
 
-      font-family: "Evolventa", sans-serif;
     }
 
     li a {
@@ -94,7 +104,7 @@ nav {
     }
 
     li a:hover {
-      color: #275b80;
+      color: #ff4a4a;
     }
 
     li:hover {
@@ -152,12 +162,15 @@ ul li ul li a {
 }
 
 .dropdown {
-  color: white;
-  padding-left: 70px;
-  width: 100%;
-  max-width: 505px;
-  margin-top: 9vh;
+  font-family: "Evolventa-Bold", sans-serif;
+    color: white;
+    padding-left: 70px;
+    width: 100%;
+    max-width: 505px;
+    margin-top: 9vh;
+
 }
+
 
 .dropdown h3 {
   outline-style: ridge;
@@ -171,7 +184,7 @@ ul li ul li a {
 }
 
 .dropdown:hover {
-  color: #fffc00;
+  color: #000000;
 }
 
 
